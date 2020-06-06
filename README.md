@@ -1,5 +1,11 @@
 # Eleventy l10n demo
 
+Demo for handling Apache Content Negotiation in an Eleventy site.
+
+Based on discussion in [https://github.com/11ty/eleventy/issues/761](https://github.com/11ty/eleventy/issues/761)
+
+Demo site can be found at [https://eleventy-l10n-demo.netlify.app](https://eleventy-l10n-demo.netlify.app/), with English (default), Japanese and Spanish language pages (`/` and `/about/`).
+
 ## Install
 
 ```
