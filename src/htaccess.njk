@@ -9,6 +9,6 @@ ForceLanguagePriority Prefer Fallback
 Options +MultiViews
 DirectoryIndex index
 
-AddLanguage en .en
-AddLanguage es .es
-AddLanguage ja .ja
+{% for language in languages -%}
+AddLanguage {{ language.lang }} .{{ language.lang }}
+{% endfor %}

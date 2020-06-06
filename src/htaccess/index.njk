@@ -1,0 +1,11 @@
+---
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: /{{ language.lang }}/.htaccess
+layout: null
+---
+
+RewriteEngine On
+RewriteRule   ^(.*)    ../$1 [E=prefer-language:{{ language.lang }}]
