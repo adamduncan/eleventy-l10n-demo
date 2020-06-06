@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/*"
+  to = "/:splat/index.ja.html"
+  status = 200
+  conditions = {Language = ["ja"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat/index.es.html"
+  status = 200
+  conditions = {Language = ["es"]}
+
+# Fallback language doesn't require conditions, and serves as a catch-all
+[[redirects]]
+  from = "/*"
+  to = "/:splat/index.en.html"
+  status = 200
+
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[dev]
+  command = "npm start"
